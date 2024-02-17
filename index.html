@@ -17,25 +17,25 @@
         <form method="get" action="results.html">
             <div>
                 <label for="firstname">Your First Name</label> <span class="required-field">*</span>
-                <input type="text" id="firstname" name="firstname" minlength="2" maxlength="35"> 
+                <input type="text" id="firstname" name="firstname" minlength="2" maxlength="35" required> 
 
                 <label for="lastname">Your Last Name</label> <span class="required-field">*</span>   
-                <input type="text" id="lastname" name="lastname" minlength="2" maxlength="35"> 
+                <input type="text" id="lastname" name="lastname" minlength="2" maxlength="35" required> 
 
                 <label for="age">Your Ege</label>
-                <input type="number" name="age" id="age" min="21" max="120">
+                <input type="number" name="age" id="age" min="21" max="120" >
             </div>
 
             <fieldset>
                 <legend>Your Contact Info</legend>
                 <div>
                     <label for="email">Your Email</label> <span class="required-field">*</span>
-                    <input type="email" id="email" name="email"> 
+                    <input type="email" id="email" name="email" required> 
                 </div>
                 <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
                 <div> <!-- Super Bonus -->
                     <label for="password">Password</label> <span class="required-field">*</span>
-                    <input type="password" name="password" id="password" minlength="6">
+                    <input type="password" name="password" id="password" minlength="6" required>
                 </div>
                 <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
                 <div>
@@ -101,7 +101,7 @@
                     </datalist>
 
                     <label for="zip">Your Zipcode</label> <span class="required-field">*</span>
-                    <input type="zip" id="zip" name="zip" pattern= [0-9]{5} title="5-Digit US ZIP Code!">
+                    <input type="zip" id="zip" name="zip" pattern= [0-9]{5} title="5-Digit US ZIP Code!" checked>
                 </div>
             </fieldset>
 
